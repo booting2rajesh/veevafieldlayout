@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviation Record Page</title>
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f6f8;
+            margin: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .header a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Button styles for headers */
+        .button-header {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 5px;
+			width:230px;
+        }
+
+        /* Three-column layout */
+        .three-column-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+            
+            border-radius: 5px;
+        }
+
+        .column-content {
+            color: #333;
+            font-size: 0.95em;
+            margin-top: 5px;
+			
+        }
+
+        .column-content p {
+            margin-bottom: 5px; /* Space between paragraphs */
+			
+        }
+
+        .date-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .date-section p {
+            margin: 0;
+        }
+
+        .attachments {
+            margin-top: 5px;
+        }
+
+        .attachments a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer-note {
+            font-size: 0.85em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Site</h2>
+            
+        </div>
+        
+        <!-- Three-column section -->
+        <div class="three-column-section">
+            <div class="column">
+                <span class="button-header">Procedure</span>
+                <div class="column-content">
+                    <p>Create deviation record</p>
+                </div>
+            </div>
+            <div class="column">
+                <span class="button-header">Expected Results</span>
+                <div class="column-content">
+                    <p>User should be able to create a deviation</p>
+                </div>
+            </div>
+            <div class="column">
+                <span class="button-header">Actual Results*</span>
+                <div class="column-content">
+                    <p>Was not able to create deviation.</p>
+                    <p>Involved system owner. Discussed and we will create a discrepancy for investigation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div>
+                <p><strong>Date Deviation Created*</strong></p>
+                <p class="column-content">4/17/2025 11:44 AM EST</p>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</body>
+</html>
