@@ -19,17 +19,18 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f4f6f8;
-            margin: 20px;
+            margin-right: 20px;
+			margin-left: 20px;
         }
 
         .container {
             width: 100%;
-            max-width: 800px;
             border: 1px solid #007bff;
             border-radius: 8px;
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0; /* Remove extra margin */
         }
 
         h2 {
@@ -62,7 +63,19 @@
             font-weight: bold;
             color: #666;
             margin-bottom: 5px;
-			width:230px;
+            width: 230px;
+        }
+
+        .Pass-header {
+            display: inline-block;
+            background-color: #007c00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #f9f9f9;
+            margin-bottom: 5px;
+            width: 80px;
+            margin-left: auto; /* Aligns the Pass button to the right */
         }
 
         /* Three-column layout */
@@ -75,7 +88,6 @@
         .column {
             flex: 1;
             padding: 10px;
-            
             border-radius: 5px;
         }
 
@@ -83,19 +95,17 @@
             color: #333;
             font-size: 0.95em;
             margin-top: 5px;
-			
         }
 
         .column-content p {
             margin-bottom: 5px; /* Space between paragraphs */
-			
         }
 
         .date-section {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+            gap: 10px;
         }
 
         .date-section p {
@@ -121,7 +131,6 @@
     <div class="container">
         <div class="header">
             <h2>Site</h2>
-            
         </div>
         
         <!-- Three-column section -->
@@ -152,10 +161,8 @@
                 <p><strong>Date Deviation Created*</strong></p>
                 <p class="column-content">4/17/2025 11:44 AM EST</p>
             </div>
-            
+            <span class="Pass-header"> &#x2714; Pass </span>
         </div>
-        
-        
     </div>
 </body>
 </html>
